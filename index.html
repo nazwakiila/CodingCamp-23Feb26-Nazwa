@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portofolio - Personal Portofolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigasi -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">🌸 Nazwa's Portofolio</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home Page</a></li>
+                <li><a href="profile.html">About Me</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section dengan Banner Foto -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1 id="welcome-text">Hey There!</h1>
+            <div class="hero-buttons">
+                <a href="#about" class="btn-primary">About Me</a>
+                <a href="#portfolio" class="btn-secondary">See My Work</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Bagian About / About Me -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+                    <h3>Hi! I'm Nazwa Akilla Zahra</h3>
+                    <p>Currently in my second semester of Informatics at Institut Teknologi Sains Bandung. I'm passionate about technology and continuously exploring the world of programming, data, and digital innovation.</p>
+                    <p>Beyond coding, Beyond coding, I also have a strong interest in design. I enjoy combining technical skills with creativity to create visually app appealing and user-friendly digital experiences. Exploring UI/UX, visual design, and digital aesthetics allows me to turn ideas into both functional and eyecatching prsolution</p>
+                    <p>Always eager to grow, I strive to blend logic and creativity to build meaningful and impactful solutions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Skills / Skills -->
+    <section class="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">💻</div>
+                    <h3>Web Development</h3>
+                    <p>HTML, CSS, JavaScript, C++, dan framework modern lainnya</p>
+                    </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🎨</div>
+                    <h3>UI/UX Design</h3>
+                    <p>Canva, Adobe Illustrator, desain responsif, dan user experience</p>
+                </div>
+        </div>
+    </section>
+
+    <!-- Bagian Pelatihan dan Sertifikasi -->
+    <section id="certification" class="certification">
+        <div class="container">
+            <h2 class="section-title">Licenses & Certifications</h2>
+            
+            <!-- Pelatihan -->
+            <h3 class="cert-section-title">🎓 Licenses</h3>
+            <ul class="simple-list">
+                <li>Graphic Design - (Special Skill Indonesia)</li>
+                <li>Excel Class - (TemanLomba X TemanCareer)</li>
+                <li>Globy Public Speaking School - (Globy)</li>
+            </ul>
+
+            <!-- Prestasi -->
+            <h3 class="cert-section-title">🏆 Certifications</h3>
+            <ul class="simple-list">
+                <li>Gold Medalist - IYSHO (Lembaga Prestige)</li>
+                <li>Gold Medalist - English (Kompetisi Festival Indonesia)</li>
+                <li>Gold Medalist - English (LKP Astikom & Deehati Global Loop)</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Bagian Volunteer -->
+    <section id="volunteer" class="volunteer">
+        <div class="container">
+            <h2 class="section-title">Volunteering</h2>
+            
+            <ul class="simple-list">
+                <li>Sprinkles of Joy (Peduly Bekasi)</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Bagian Hubungi Saya / Form Kontak -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <p class="section-subtitle">Have an interesting project? Let's discuss it together!</p>
+            
+            <form id="contactForm" class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name">
+                        <span class="error-message" id="name-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email">
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                    <span class="error-message" id="phone-error"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject of your message">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
+                    <span class="error-message" id="message-error"></span>
+                </div>
+                
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+
+            <!-- Hasil Tampilan Form -->
+            <div id="form-results" class="form-results" style="display: none;">
+                <div class="results-header">
+                    <span class="success-icon">✅</span>
+                    <h3>Pesan Berhasil Dikirim!</h3>
+                </div>
+                <div class="result-content">
+                    <div class="result-item">
+                        <span class="result-label">Nama:</span>
+                        <span id="result-name" class="result-value"></span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Email:</span>
+                        <span id="result-email" class="result-value"></span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Telepon:</span>
+                        <span id="result-phone" class="result-value"></span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Subjek:</span>
+                        <span id="result-subject" class="result-value"></span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Pesan:</span>
+                        <span id="result-message" class="result-value"></span>
+                    </div>
+                </div>
+                <button class="btn-reset" onclick="resetForm()">Kirim Pesan Lagi</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>🌸 Nazwa's Portofolio</h3>
+                    <p>Thank you for visiting my portofolio!</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home Page</a></li>
+                        <li><a href="profile.html">About Me</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Social Media</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" title="LinkedIn.com/in/nazwakilla">💼</a>
+                        <a href="#" class="social-icon" title="www.instagram.com/nazwakiila">📷</a>
+                        <a href="#" class="social-icon" title="nazwaaakillaza@gmail.com">📧</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
