@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 20px;
+    border: 1px solid #ccc;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.circle-logo {
+    background-color: #ff99eb;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid #47031a;
+    padding: 5px 15px;
+    margin-left: 5px;
+}
+
+/* Sections */
+section {
+    padding: 40px 0;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ff638a;
+}
+
+.hero {
+    text-align: left;
+}
+
+.hero-banner {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #333;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+}
+
+/* 1. Mengatur agar 3 gambar berjejer ke samping */
+.hq-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+/* 2. Mengatur teks agar di bawah lingkaran */
+.hq-item {
+    text-align: center;
+}
+
+/* 3. Membuat bingkai lingkaran */
+.hq-circle {
+    width: 150px;       
+    height: 150px;      
+    border-radius: 50%; 
+    overflow: hidden;    
+    border: 1px solid #270012;
+    margin-bottom: 10px;
+}
+
+/* 4. Mengatur Gambar di dalamnya */
+.hq-circle img {
+    width: 100%;        
+    height: 100%;       
+    object-fit: cover;  
+}
+
+.hq-item p {
+    font-weight: bold;
+    color: #333;
+}
+/* Form & Result */
+.flex-container {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+form {
+    flex: 1;
+}
+
+.form-group {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: flex-start;
+}
+
+.form-group label {
+    width: 100px;
+}
+
+.form-group span {
+    margin-right: 10px;
+}
+
+input[type="text"], input[type="date"], textarea {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+textarea {
+    height: 80px;
+}
+
+button {
+    width: 100%;
+    padding: 8px;
+    background: #ff9ac4;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+
+.result-box {
+    flex: 1;
+    border: 1px solid #ff8eae;
+    padding: 20px;
+    min-height: 200px;
+}
+
+footer {
+    text-align: right;
+    font-size: 12px;
+    margin-top: 40px;
+}

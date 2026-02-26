@@ -1,0 +1,113 @@
+<!DOC<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website - RevoU</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <div class="circle-logo">RevoU Project Beginner</div>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Our Profile</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Message Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Hey y'all, Welcome To Website</h1>
+            <p>This is my first website project <3 </p>
+
+            <div class="hero-banner">
+                <img src="https://i.pinimg.com/1200x/7f/1c/b1/7f1cb183f7ba3d7affadd86648fca504.jpg" alt="Hero Image"
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="headquarters">
+    <h2>Our Headquarter</h2>
+    <div class="hq-container">
+        
+        <div class="hq-item">
+            <div class="hq-circle">
+                <img src="https://i.pinimg.com/1200x/ae/ed/88/aeed882bbc8a84fac63c33826a1954b1.jpg">
+            </div>
+            <p>Jakarta</p>
+        </div>
+
+        <div class="hq-item">
+            <div class="hq-circle">
+                <img src="https://i.pinimg.com/1200x/51/74/c2/5174c2a885d407a9bf6bc5ebd989a634.jpg">
+            </div>
+            <p>Bandung</p>
+        </div>
+
+        <div class="hq-item">
+            <div class="hq-circle">
+                <img src="https://i.pinimg.com/1200x/2d/d8/68/2dd86812fa6368cca8314dc43434f7f3.jpg">
+            </div>
+            <p>Surabaya</p>
+        </div>
+
+    </div>
+</section>
+        <hr>
+
+        <section class="message-section">
+            <h2>Message Us</h2>
+            <div class="flex-container">
+                <form id="messageForm">
+                    <div class="form-group">
+                        <label>Nama</label>
+                        <span>:</span>
+                        <input type="text" id="inputNama" placeholder="Nama" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Tanggal Lahir</label>
+                        <span>:</span>
+                        <input type="date" id="inputTgl" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Jenis Kelamin</label>
+                        <span>:</span>
+                        <div class="radio-group">
+                            <input type="radio" name="jk" value="Laki-Laki" checked> Laki-Laki
+                            <input type="radio" name="jk" value="Perempuan"> Perempuan
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Pesan</label>
+                        <span>:</span>
+                        <textarea id="inputPesan" placeholder="Pesan" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+
+                <div class="result-box">
+                    <p id="currentTime"></p>
+                    <div id="displayData">
+                        <p><strong>Nama :</strong> <span id="resNama"></span></p>
+                        <p><strong>Tanggal Lahir :</strong> <span id="resTgl"></span></p>
+                        <p><strong>Jenis Kelamin :</strong> <span id="resJK"></span></p>
+                        <p><strong>Pesan :</strong> <span id="resPesan"></span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created By Nazwa</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
